@@ -3,8 +3,6 @@ import Card from "./Card";
 
 const team = (props) => {
 
-  const rows = [0,1,2];
-
   const teammates = [
     [
       { name: "Balachandra DS", position: "President" },
@@ -21,6 +19,12 @@ const team = (props) => {
       { name: "Khushi S", position: "Logistics Lead" },
     ],
   ];
+
+  const rows = [];
+
+  for(let i=0; i<teammates.length; i++){
+    rows.push(i);
+  }
 
   return (
     <section id="team" className="section-team">
