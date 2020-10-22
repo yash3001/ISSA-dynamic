@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./issa-logo.png";
 
-function header(props) {
+const header = (props) => {
   return (
     <header id="home" className="header">
       <div className="header__text-box">

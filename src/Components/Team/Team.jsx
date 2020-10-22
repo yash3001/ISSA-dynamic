@@ -1,7 +1,10 @@
 import React from "react";
 import Card from "./Card";
 
-function team(props) {
+const team = (props) => {
+
+  const rows = [0,1,2];
+
   const teammates = [
     [
       { name: "Balachandra DS", position: "President" },
@@ -22,8 +25,11 @@ function team(props) {
   return (
     <section id="team" className="section-team">
       <h2 className="heading-secondary u-margin-bottom-big"> Meet the team </h2>
-      <div className="team-flex-box">
-        {teammates[0].map((teammate) => {
+      
+      {rows.map(num => {
+        return (
+        <div className="team-flex-box" key={num}>
+        {teammates[num].map((teammate) => {
           return (
             <Card
               key={teammate.name}
@@ -32,31 +38,8 @@ function team(props) {
             />
           );
         })}
-      </div>
-
-      <div className="team-flex-box">
-        {teammates[1].map((teammate) => {
-          return (
-            <Card
-              key={teammate.name}
-              name={teammate.name}
-              position={teammate.position}
-            />
-          );
-        })}
-      </div>
-
-      <div className="team-flex-box">
-        {teammates[2].map((teammate) => {
-          return (
-            <Card
-              key={teammate.name}
-              name={teammate.name}
-              position={teammate.position}
-            />
-          );
-        })}
-      </div>
+      </div>)
+      })}
     </section>
   );
 }

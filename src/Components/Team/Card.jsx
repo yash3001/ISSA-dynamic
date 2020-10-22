@@ -1,6 +1,6 @@
 import React from "react";
 
-function card(props) {
+const card = (props) => {
   return (
     <div className="our-team">
       <div className="picture">
