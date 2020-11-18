@@ -4,27 +4,27 @@ const Menuitem = [
     {
         cname: 'nav-items',
         name: 'Home',
-        link: 'ISSA-dynamic/',
+        link: '/ISSA_Dynamic_Web/',
     },
     {
         cname: 'nav-items',
         name: 'Events',
-        link: 'ISSA-dynamic//',
+        link: '/ISSA_Dynamic_Web//',
     },
     {
         cname: 'nav-items',
         name: 'Projects',
-        link: 'ISSA-dynamic///',
+        link: '/ISSA_Dynamic_Web///',
     },
     {
         cname: 'nav-items',
         name: 'Your-Blog',
-        link: 'ISSA-dynamic////',
+        link: '/ISSA_Dynamic_Web////',
     },
     {
         cname: 'nav-items',
         name: 'Register',
-        link: 'ISSA-dynamic/////',
+        link: '/ISSA_Dynamic_Web/////',
     }
 ];
 export default Menuitem;
