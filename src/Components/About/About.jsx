@@ -1,7 +1,7 @@
 import React from "react";
 import Row from "./Row";
 
-const about = (props) => {
+function about(props) {
   return (
     <section id="about" className="section-about">
       <h2 className="heading-secondary u-margin-bottom-big">

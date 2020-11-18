@@ -1,6 +1,6 @@
 import React from "react";
 
-const block = (props) => {
+function block(props) {
   return (
     <div className={props.name + " count"}>
       <h4>{props.value}</h4>

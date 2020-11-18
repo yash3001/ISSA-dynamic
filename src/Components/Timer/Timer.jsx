@@ -1,7 +1,7 @@
 import React from "react";
 import Block from "./Block";
 
-const timer = (prop) => {
+function timer(prop) {
   return (
     <section id="timer" className="countdown-timer">
       <h3 className="heading-tertiary">Next Event</h3>

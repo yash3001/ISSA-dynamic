@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+a:hover{
+    text-decoration: none;
+}
+.heading-secondary{
+    display: flex;
+    justify-content: center;
+}
+.eventpagebackgimg{
+    background-image: url('../../img/events-pics/background-pc.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    transform-style:flat;
+    min-height: max-content;
+    background-size: cover;
+    background-position: top;
+}
+.fulllist{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+}
+.onecard{
+    margin: 12rem;
+    animation: moveInLeft 0.8s ease-out;
+}
+.onecard:nth-last-child(n){
+    margin-bottom: 0px;
+}
+.elistcard{
+    margin: auto;
+    border-radius: 2rem !important;
+}
+.elistimg{
+    padding-top: 15px;
+    width: auto;
+    height: 400px;
+    border-radius: 2.5rem !important;
+}
+#background-video{
+    height: 400px;
+    width: 100%;
+    top: 0;
+    padding: none;
+}
+.eventheading{
+    display: flex;
+    justify-content: center;
+}
+.ename{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.ediscription{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.heading-upcoming{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.buttonforevent{
+    margin: 1rem 8rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(to right, #4b9fe1, #3778c2);
+    padding: 8px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.buttonforevent:hover{
+    background: #277bdb;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.iconcontainer{
+    display: flex;
+    justify-content: center;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    margin: 1rem 3rem;
+    color: black;
+}
+.fa-pen-square{
+    margin: 0rem 1rem;
+    font-size: 1.6rem;
+}
+@media screen and (max-width: 960px){
+    .onecard{
+        margin: 5rem;
+    }
+    .elistcard{
+        margin: 0px;
+    }
+    .elistimg{
+        padding-top: 15px;
+        width: 100%;
+        height: 250px;
+    }
+    .ediscription{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .buttonforevent{
+        margin: 1rem 0rem;
+        display: flex;
+        justify-content: center;
+        color: white;
+        background: linear-gradient(to right, #4b9fe1, #3778c2);
+        padding: 1.5rem 6rem;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    .buttonforevent:hover{
+        background: linear-gradient(to left, #4b9fe1, #3778c2);
+        color: white;
+        text-decoration: none;
+    }
+    .eventpagebackgimg{
+        background-image: url('../../img/events-pics/background-pc-3.jpg');
+        background-repeat: repeat;
+        background-attachment: local;
+        background-size: cover;
+    }
+}
+@media screen and (min-width: 1550px){
+    .elistimg{
+        padding-top: 15px;
+        width: auto;
+        height: 750px;
+        border-radius: 5rem !important;
+    }
+}

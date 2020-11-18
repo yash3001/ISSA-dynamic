@@ -1,9 +1,16 @@
+*{
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
 .navbar{
     background: linear-gradient(-45deg,#00003f,black);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 65px;
     position: relative;
     top: 0;
 }
@@ -44,26 +51,27 @@
     margin-right: 2rem;
     font-size: 1.6rem;
 }
-.list li::before {
-	content: "";
-	display: block;
-	height: 2px;
-	width: 100%;
-	background-color: #ffffff;
-	display: fixed;
-	position: absolute;
-    top: 0;
-    width: 0%;
-    transition: all ease-in-out 1.2s;
-}
-.list li:hover::before{
-    width: 8%;
-  background-color: #000000;
-}
 .nav-items{
     color: white;
     text-decoration: none;
-    padding: 2.5rem 2.5rem;
+    padding: 1rem 2rem;
+}
+.list .nav-items::before {
+	content: "";
+	display: block;
+	height: 3px;
+	width: 100%;
+	background-color: #ffffff;
+	display: fixed;
+	position: relative;
+    top: -10px;
+    left: 0;
+    width: 0%;
+    transition: all ease-in-out 1.2s;
+}
+.list .nav-items:hover::before{
+    width: 100%;
+  background-color: #000000;
 }
 .nav-items:hover {
     text-decoration: none;
@@ -86,7 +94,6 @@
 .menu-icon{
     opacity: 0;
 }
-
 @keyframes logorotate {
     0%{
       transform: rotate(0deg);
@@ -104,6 +111,11 @@
     }
   }
 @media screen and (max-width: 960px){
+    .links{
+        text-decoration: none;   
+        background: linear-gradient(-45deg,#00003f,black);
+        margin: 0px;
+    }
     .navbar{
         position: relative;
     }
@@ -112,11 +124,12 @@
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 80px;
+        top: 65px;
         font-size: 2rem;
         left: -100%;
         opacity: 1;
         transition: all .8s ease-in-out;
+        grid-gap: 0px;
     }
     .list.active{
         background: linear-gradient(-45deg,#00003f,black);
@@ -125,13 +138,14 @@
         transition: all .5s ease-in-out;
         z-index: 1;
         padding: 0px;
+        margin: 0px !important;
     }
     .nav-items{
         text-align: center;
-        padding: 1.8rem;
+        padding: 1.2rem;
         width: 100%;
         display: table;
-        margin: 0px;
+        margin: 0px !important;
     }
     .nav-items:hover{
         background-color: rgba(96, 96, 96,0.4);
@@ -144,7 +158,7 @@
         top: 0;
         right: 0;
         color: white;
-        transform: translate(-100%,40%);
+        transform: translate(-50%,18%);
         font-size: 3.8rem;
     }
 }

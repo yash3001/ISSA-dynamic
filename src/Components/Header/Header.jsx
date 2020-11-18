@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./issa-logo.png";
 
-const header = (props) => {
+function header(props) {
   return (
     <header id="home" className="header">
       <div className="header__text-box">
@@ -12,7 +12,7 @@ const header = (props) => {
           </span>
         </h1>
         <a href="#" className="btn btn--white btn--animated">
-          Learn more
+          Register For The Event
         </a>
       </div>
     </header>

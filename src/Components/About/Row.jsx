@@ -1,6 +1,6 @@
 import React from "react";
 
-const row = (props) => {
+function row(props) {
   return (
     <div className="about">
       <h3 className="heading-tertiary">{props.heading}</h3>
