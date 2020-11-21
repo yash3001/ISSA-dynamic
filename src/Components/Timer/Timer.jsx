@@ -11,7 +11,7 @@ function timer(prop) {
         <Block name="minutes" value={prop.value_minutes} color="yellow" />
       </div>
       <a href="#" className="btn btn--white btn--animated">
-        Register For The Event
+        Know More
       </a>
     </section>
   );
