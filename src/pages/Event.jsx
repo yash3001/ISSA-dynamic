@@ -7,7 +7,7 @@ class Events extends Component{
     }
     render(){
         return(
-            <div className='eventspage'>
+            <div className=''>
                 <Eventslist />
             </div>
         );
