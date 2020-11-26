@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    transition: all .5s ease-in-out;
 }
 body{
     overflow-x: hidden;
@@ -13,6 +14,7 @@ a:hover{
     justify-content: center;
 }
 .eventpagebackgimg{
+    padding: 110px;
     background-image: url('../../img/events-pics/background-pc.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -38,10 +40,14 @@ a:hover{
     margin: auto;
     border-radius: 2rem !important;
 }
+.elistcard:hover{
+    transform: scale(1.1);
+  box-shadow: 0px 0px 15px 0px;
+}
 .elistimg{
     padding-top: 15px;
     width: auto;
-    height: 400px;
+    height: 300px;
     border-radius: 2.5rem !important;
 }
 #background-video{
@@ -134,6 +140,7 @@ a:hover{
         text-decoration: none;
     }
     .eventpagebackgimg{
+        padding: 0px;
         background-image: url('../../img/events-pics/background-pc-3.jpg');
         background-repeat: repeat;
         background-attachment: local;
@@ -146,5 +153,8 @@ a:hover{
         width: auto;
         height: 750px;
         border-radius: 5rem !important;
+    }
+    .eventpagebackgimg{
+        padding: 130px;
     }
 }

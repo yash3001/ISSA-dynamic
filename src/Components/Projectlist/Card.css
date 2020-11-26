@@ -1,17 +1,25 @@
 /*-Css file*/
 
 .card-container {
-  width: 300px;
   overflow: hidden;
   box-shadow: 0px 0px 15px -5px;
   transition: 0.3s;
   animation: ease-in;
   margin-bottom: 2rem;
+  padding: 0em;
+  width: 100%;
+}
+
+.projectpage{
+  padding: 40px;
+  columns: 3;
 }
 
 .App {
-  display: inline-block;
+  display: inline-flex;
   margin: 1.5rem;
+  justify-content: center;
+
 }
 
 .card-container:hover {
@@ -39,12 +47,12 @@ p1 {
   margin-bottom: 0.5rem;
 }
 
-.btn {
+.btnn {
   display: flex;
   justify-content: center;
 }
 
-.btn button {
+.btnn button {
   padding: 0.5rem;
   background-color: white;
   transition: 0.2s;
@@ -52,14 +60,34 @@ p1 {
   border-radius: 3px;
 }
 
-btn button:hover {
+.btnn button:hover {
   background: rgba(27, 156, 252, 0.1);
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
-a {
+.btnfont {
   text-transform: uppercase;
-  color: #1b9cfc;
+  color: rgb(78, 76, 76);
   text-decoration: none;
   font-weight: bold;
+}
+.btnfont:hover{
+  text-decoration: none;
+  color: black;
+}
+@media (min-width: 769px) and (max-width: 1024px){
+  .projectpage{
+    columns: 2;
+  }
+}
+@media screen and (max-width: 768px){
+  .projectpage{
+    columns: 2;
+  }
+}
+@media screen and (max-width: 520px){
+  .projectpage{
+    padding: 20px;
+    columns: 1;
+  }
 }

@@ -13,7 +13,7 @@ function Card({title,imageUrl,body}){
                 <div className='card-body'>
                     <p>{body}</p>
                 </div>
-                <div className='btn'>
+                <div className='btnn'>
                     <button>
                         <a>
                             View More
