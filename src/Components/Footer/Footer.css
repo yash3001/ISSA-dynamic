@@ -1,98 +1,237 @@
 .foot{
-    background: linear-gradient(-45deg,#00003f,black);
-    height: 100%;
-    padding: 5px;
-    overflow: hidden;
+  background: linear-gradient(-45deg,#00003f,black);
+  height: 100%;
+  padding: 5px;
+  overflow: hidden;
+  transition: all ease-in-out 1.2s;
 }
 .items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logo1{
-    width: 50px;
-    height: 40px;
-    transition: .8s;
-    z-index: 3;
-    /* animation: logorotate .8s ease-in-out infinite; */
-    display: block;
-    margin-bottom: 20px;
+  width: 50px;
+  height: 40px;
+  transition: .8s;
+  z-index: 3;
+  /* animation: logorotate .8s ease-in-out infinite; */
+  display: block;
+  margin-bottom: 20px;
 }
 .logo1:hover{
-    transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 .wig{
-	display: flex;
-	padding: 0;
+display: flex;
+padding: 0;
 }
 .wig li{
-  padding: 10px;
-	list-style: none;
+padding: 10px;
+list-style: none;
 }
 .wig li a{
-	width: 40px;
-	height: 40px;
-	text-align: center;
-	line-height: 30px;
-	font-size: 16px;
-	margin: 0 3px;
-	display: block;
-	border-radius: 50%;
-	position: relative;
-	overflow: hidden;
-	border: 1px black;
-	z-index: 1;
+width: 40px;
+height: 40px;
+text-align: center;
+line-height: 30px;
+font-size: 16px;
+margin: 0 3px;
+display: block;
+border-radius: 50%;
+position: relative;
+overflow: hidden;
+border: 1px black;
+z-index: 1;
 }
 .wig li a .fa{
-	position: relative;
-	color: 	#C8C8C8;
-	transition: .5s;
-	z-index: 3;
-    font-size: 20px;
+position: relative;
+color: 	#C8C8C8;
+transition: .5s;
+z-index: 3;
+  font-size: 20px;
 }
 .wig li a:hover .fa{
-	color: #fff;
-	transform: rotateY(360deg);
-	font-size: 23px;
+color: #fff;
+transform: rotateY(360deg);
+font-size: 23px;
 }
 .wig li:nth-child(1) a:hover .fa{
-    color: #ffffff;
-  }
+  color: #ffffff;
+}
 .wig li:nth-child(2) a:hover .fa{
-  color: #2ea3f1;
+color: #2ea3f1;
 }
 .wig li:nth-child(3) a:hover .fa{
-    color: #FF0000;
-  }
-  .wig li:nth-child(4) a:hover .fa{
-    color: #C13584;
-  }
+  color: #FF0000;
+}
+.wig li:nth-child(4) a:hover .fa{
+  color: #C13584;
+}
 .wig li:nth-child(5) a:hover .fa{
-  color: #df323a;
+color: #df323a;
 }
 .wig li a:before{
-	content: "";
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	/* background: #f00; */
-	transition: .5s;
-	z-index: 2;
+content: "";
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+height: 100%;
+/* background: #f00; */
+transition: .5s;
+z-index: 2;
 }
-.contact{
-    background-color: white;
-    padding: 5px;
-    border-radius: 6px;
-    color: black;
-    font-weight: 400;
-    margin-right: 5px;
-    font-size: 1.3rem;
+.suggestionbox{
+ border-radius: 1px;
+ 
+  border-radius: 6px;
+  color: black;
+  font-weight: 400;
+  font-size: 1.3rem;
+ display: inline-block;
+background: #55b9f3;
+box-shadow: 
+inset 0 0 25px rgba(55, 84, 170,0),
+inset 0 0 20px rgba(255, 255, 255,0),
+-2px -2px 8px rgba(255, 255, 255,1),
+inset 5px 5px 4px rgba(255, 255, 255,.2);
 }
-.contact:hover{
-    background-color: rgb(63, 63, 63);
-    text-decoration: none;
-    color: white;
-    transition: all 0.5s ease-in-out;
+.suggestionbox:hover{
+  background-color: #f1f3f6;
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease-in-out;
+
+}
+.suggestionheading{
+color: #2ea3f1;
+font-size: 24px;
+
+}
+
+.footer-copyright{
+text-align: center;
+color: #2ea3f1;
+border-radius: 40px;
+
+}
+.buttontext{
+font-size: 20px ;
+}
+
+.name{
+display: flex;
+justify-content: center;
+}
+.groupname{
+color: #2A82A2;
+text-shadow: 1px 1px 3px rgba(255, 250, 250, 0.705);
+padding-left: 5px;
+font-family: 'Noto Serif', serif;
+text-transform: uppercase;
+letter-spacing: -2px;
+}
+
+h1 span{
+
+margin: 11px 0 17px 0;
+font-size: 30px;
+color: #f1ebe5;
+text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+letter-spacing: -2px;
+}
+
+.contactus{
+
+color: #2ea3f1;
+font-size: 24px;
+
+}
+.contactuspage{
+text-align: center;
+border-radius: 40px;
+transition: ease-in-out ;
+
+}
+.address{
+font-size: large;
+justify-content: center;
+text-align: center;
+}
+.addresspage{
+color: #2ea3f1;
+font-size: 24px;
+}
+
+.collegedetails{
+margin-top: 10px;
+color: #C8C8C8;
+}
+.contactdetails{
+color: #C8C8C8;
+margin-top: 8px;
+text-align: center;
+/* margin-left: 25px; */
+}
+.email{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin-left: 5px;
+}
+.enqueries{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: #f1f3f6;
+text-align: center;
+}
+.contactno{
+color: rgba(134, 196, 247, 0.904);
+font-size: 20px;
+margin-left: 10px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media only screen and (max-width: 767px) {
+.contactuspage{
+   text-align: center;
+   align-items: center;
+
+}
+
+
+
+.contactuspage h4{
+  font-size: 14px;
+}
+
+}
+
+
+@media only screen and (max-width: 456px) {
+
+
+.name{
+ margin-left: 30px;
+}
+
+}
+
+
+@media (min-width:992px) and (max-width:1145px) {
+.contactno{
+  font-size: 15px;
+}
+
+}
+
+@media (min-width:992px) and (max-width:1063px) {
+.enqueries{
+  font-size: 18px;
+}
+
+}
+@media (min-width:992px) and (max-width:1058px) {
+.email{
+  font-size: 18px;
+}
+
 }

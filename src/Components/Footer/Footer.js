@@ -16,14 +16,45 @@ class Footer extends Component{
                                 <li><a href="#" target="_blank"><i className="fa fa-google-plus" aria-hidden="true"></i></a></li>
                         </ul>
                 </div>
-                <a href="index.html" class="text-center d-flex justify-content-center">
-                    <img className='text-center logo1 d-flex justify-content-center' src={logo} width='100%'></img>
+                <div className='name'>
+                <a href="index.html">
+                    <img className='text-center logo1 ' src={logo} width='100%'></img>
                 </a>
-                <div class="footer-copyright text-center py-3">
-                   <a className='contact' href="">Suggestion Box</a>
-                    <a className='contact' href="">Contact Us</a>
+                <h1 className='groupname'>
+                   <span>NIE ISSA STUDENT CHAPTER</span> 
+                </h1>
+               </div>
+               <div class="container-fluid col-12 col-lg-12 col-md-12 col-xl-12">
+                   <div className="row">
+
+                <div className="address py-3 col-12 text-center col-md-12 col-lg-4 col-xl-4">
+                    <span className='addresspage text-center col-6 col-md-6'>ADDRESS : </span>
+                    <div className="collegedetails">
+                    <h2>THE NATIONAL INSTITUTE OF ENGINEERING</h2>
+                      <span>Mananthavadi Rd, Vidyaranyapura, Mysuru, Karnataka 570008</span>
+                      </div>
+                </div>
+                <div className="footer-copyright py-3  col-12 col-md-12 col-lg-4 col-xl-4">
+                    <span className='suggestionheading text-center col-12 col-md-12 col-xl-12'>WE ARE HERE TO HEAR YOU</span>
+                   <a className='suggestionbox py-3 col-12 col-md-12 col-lg-12 col-xl-12' href="https://forms.gle/hD6CDjorzfwBGRKU7" style={{margin: 10+'px'}}>
+                   <span className='buttontext col-md-12'  >SUGGESTION BOX</span>
+                       </a>
+                </div>
+               
+                <div className="contactuspage py-3 text-center col-12 col-md-12 col-lg-4 col-xl-4">
+                    <span className='contactus text-center col-12 col-md-12 col-lg-12'>CONTACT US </span>
+                    <div class="contactdetails text-center col-12 col-md-12 col-lg-12">
+                    <h2><span className="email">EMAIL US : issa_nie@nie.ac.in</span></h2>
+                    <h2 className="enqueries">FOR ANY ENQUERIES CALL US:</h2>  
+                    <h4 className="contactno">BALACHANDRA DS:  7899797976 </h4> 
+                    <h4 className="contactno">SAMBHAV BHANDARI:  6261999236 </h4> 
+                    </div>
+                  
+                </div>
+                </div>
                 </div>
             </footer>
+
         )
     }
 }
