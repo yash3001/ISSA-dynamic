@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
+import Register from '../Components/Register/Register';
 
-class Register extends Component{
+class Registers extends Component{
+
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render(){
         return(
-            <h1>Register</h1>
+            <div>
+               <Register />
+        
+            </div>
+            
         );
     }
 }
-export default Register;
+export default Registers;
