@@ -18,7 +18,7 @@ class Footer extends Component{
                 </div>
                 <div className='name'>
                 <a href="index.html">
-                    <img className='text-center logo1 ' src={logo} width='100%'></img>
+                    <img className='text-center logo1 ' src={logo} ></img>
                 </a>
                 <h1 className='groupname'>
                    <span>NIE ISSA STUDENT CHAPTER</span> 
@@ -30,13 +30,13 @@ class Footer extends Component{
                 <div className="address py-3 col-12 text-center col-md-12 col-lg-4 col-xl-4">
                     <span className='addresspage text-center col-6 col-md-6'>ADDRESS : </span>
                     <div className="collegedetails">
-                    <h2>THE NATIONAL INSTITUTE OF ENGINEERING</h2>
+                    <h3 className="collegename">THE NATIONAL INSTITUTE OF ENGINEERING</h3>
                       <span>Mananthavadi Rd, Vidyaranyapura, Mysuru, Karnataka 570008</span>
                       </div>
                 </div>
                 <div className="footer-copyright py-3  col-12 col-md-12 col-lg-4 col-xl-4">
                     <span className='suggestionheading text-center col-12 col-md-12 col-xl-12'>WE ARE HERE TO HEAR YOU</span>
-                   <a className='suggestionbox py-3 col-12 col-md-12 col-lg-12 col-xl-12' href="https://forms.gle/hD6CDjorzfwBGRKU7" style={{margin: 10+'px'}}>
+                   <a className='suggestionbox py-4 col-12 col-md-12 col-lg-12 col-xl-12' href="https://forms.gle/hD6CDjorzfwBGRKU7" >
                    <span className='buttontext col-md-12'  >SUGGESTION BOX</span>
                        </a>
                 </div>
@@ -44,10 +44,10 @@ class Footer extends Component{
                 <div className="contactuspage py-3 text-center col-12 col-md-12 col-lg-4 col-xl-4">
                     <span className='contactus text-center col-12 col-md-12 col-lg-12'>CONTACT US </span>
                     <div class="contactdetails text-center col-12 col-md-12 col-lg-12">
-                    <h2><span className="email">EMAIL US : issa_nie@nie.ac.in</span></h2>
-                    <h2 className="enqueries">FOR ANY ENQUERIES CALL US:</h2>  
-                    <h4 className="contactno">BALACHANDRA DS:  7899797976 </h4> 
-                    <h4 className="contactno">SAMBHAV BHANDARI:  6261999236 </h4> 
+                    <h3><span className="email">EMAIL US : issa_nie@nie.ac.in</span></h3>
+                    <h3 className="enqueries">FOR ANY ENQUERIES CALL US:</h3>  
+                    <h4 className="contactno">BALACHANDRA DS: <a href="tel:7899797976"> 7899797976 </a></h4> 
+                    <h4 className="contactno">SAMBHAV BHANDARI: <a href="tel:6261999236">  6261999236 </a> </h4> 
                     </div>
                   
                 </div>
