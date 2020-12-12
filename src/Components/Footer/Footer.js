@@ -28,15 +28,14 @@ class Footer extends Component{
                    <div className="row">
 
                 <div className="address py-3 col-12 text-center col-md-12 col-lg-4 col-xl-4">
-                    <span className='addresspage text-center col-6 col-md-6'>ADDRESS : </span>
+                    <span className='addresspage text-center col-6 col-md-6'>ADDRESS</span>
                     <div className="collegedetails">
                     <h3 className="collegename">THE NATIONAL INSTITUTE OF ENGINEERING</h3>
                       <span>Mananthavadi Rd, Vidyaranyapura, Mysuru, Karnataka 570008</span>
                       </div>
                 </div>
                 <div className="footer-copyright py-3  col-12 col-md-12 col-lg-4 col-xl-4">
-                    <span className='suggestionheading text-center col-12 col-md-12 col-xl-12'>WE ARE HERE TO HEAR YOU</span>
-                   <a className='suggestionbox py-4 col-12 col-md-12 col-lg-12 col-xl-12' href="https://forms.gle/hD6CDjorzfwBGRKU7" >
+                   <a className='suggestionbox col-12 col-md-12 col-lg-12 col-xl-12' target="_blank" href="https://forms.gle/hD6CDjorzfwBGRKU7" >
                    <span className='buttontext col-md-12'  >SUGGESTION BOX</span>
                        </a>
                 </div>
@@ -45,7 +44,6 @@ class Footer extends Component{
                     <span className='contactus text-center col-12 col-md-12 col-lg-12'>CONTACT US </span>
                     <div class="contactdetails text-center col-12 col-md-12 col-lg-12">
                     <h3><span className="email">EMAIL US : issa_nie@nie.ac.in</span></h3>
-                    <h3 className="enqueries">FOR ANY ENQUERIES CALL US:</h3>  
                     <h4 className="contactno">BALACHANDRA DS: <a href="tel:7899797976"> 7899797976 </a></h4> 
                     <h4 className="contactno">SAMBHAV BHANDARI: <a href="tel:6261999236">  6261999236 </a> </h4> 
                     </div>

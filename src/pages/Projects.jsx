@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Projectslist from '../Components/Projectlist/Projectslist';
-import Carousel from '../Components/Carousel/Carousel';
+import Carousel1 from '../Components/Carousel/Carousel';
 
 class Projects extends Component{
     componentDidMount() {
@@ -9,7 +9,7 @@ class Projects extends Component{
     render(){
         return(
             <div>
-                 <Carousel />
+                 <Carousel1 />
                 <Projectslist />
             </div>
         );
