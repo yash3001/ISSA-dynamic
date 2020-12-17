@@ -4,7 +4,7 @@ import './Elists.css'
 function Cards( props ) {
     return(
     <li>
-        <div className="onecard">
+        <div class="onecard">
             <div class="card elistcard col-12">
                 <img class="card-img elistimg" src={props.image} alt="Card image cap" />
                 <div class="card-body">

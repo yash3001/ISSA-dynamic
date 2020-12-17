@@ -3,6 +3,11 @@ import  Menuitem from './Menuitems.js';
 import './Navbar.css';
 import logo from './issa-logo.png';
 import { Link } from "react-router-dom";
+// import { ThemeProvider } from 'styled-components';
+// import { lightTheme, darkTheme } from '../Darkmode/Theme';
+// import { GlobalStyles } from '../Darkmode/Global';
+// import Toggle from '../Darkmode/Togglerjs';
+// import { useDarkMode } from '../Darkmode/useDarkmode';
 
 
 class Navbar extends Component{

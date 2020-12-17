@@ -129,6 +129,12 @@ a:hover{
         width: 100%;
         height: 250px;
     }
+    .elistimg:hover{
+        transition: all 1s ease-in-out;
+        transform: scale(1.1);
+        padding: 0px;
+        margin: 0px;
+    }
     .ediscription{
         font-size: 1.2rem;
         text-align: center;
