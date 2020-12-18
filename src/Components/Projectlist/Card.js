@@ -17,11 +17,8 @@ function Card({title,imageUrl,body}){
                     <p>{body}</p>
                 </div>
                 <div className='btnn'>
-                    <button>
-                        <a>
-                            View More
-                        </a>
-                    </button>
+                    <span>Check it out!</span>
+                    <a href="https://github.com/ISSA-ICON" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a>
                 </div>
                 
                 </div> 

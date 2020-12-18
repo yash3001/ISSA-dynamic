@@ -21,8 +21,10 @@ function App() {
       <Navbar />
         <Main />
       <Footer />
+      <div className='toggle-container'>
       <Toggle theme={theme} toggleTheme={toggleTheme}></Toggle>
       <h3 className='text-center'>It's a {theme === 'light' ? 'light mode' : 'dark mode'}!</h3>
+      </div>
     </div>
     <GlobalStyles />
     </>

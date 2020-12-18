@@ -10,7 +10,6 @@ class Registers extends Component{
         return(
             <div>
                <Register />
-        
             </div>
             
         );

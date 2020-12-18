@@ -28,9 +28,12 @@
   box-shadow: 0px 0px 15px 0px;
 }
 
-.img-container img {
+.image-container img {
   overflow: hidden;
   height: 200px; 
+}
+.image-container{
+  margin-bottom: 15px;
 }
 
 .card-content {
@@ -47,35 +50,45 @@ p1 {
 .card-title {
   margin-bottom: 0.5rem;
 }
-
-.btnn {
+.btnn span{
   display: flex;
+  padding: 0;
   justify-content: center;
-}
-
-.btnn button {
-  padding: 0.5rem;
-  background-color: white;
-  transition: 0.2s;
-  margin-bottom: 0.5rem;
-  border-radius: 3px;
-}
-
-.btnn button:hover {
-  background: rgba(27, 156, 252, 0.1);
-  transform: scale(1.1);
-}
-
-.btnfont {
-  text-transform: uppercase;
-  color: rgb(78, 76, 76);
-  text-decoration: none;
-  font-weight: bold;
-}
-.btnfont:hover{
-  text-decoration: none;
-  color: black;
-}
+  margin: 0;
+  }
+  .btnn a .fa{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+  }
+  .btnn a{
+  padding: 15px;
+  list-style: none;
+  }
+  .btnn a .fa{
+    padding: 5px;
+    columns: 1;
+  height: 40px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 25px;
+  margin: 0 3px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px black;
+  z-index: 1;
+  }
+ .card-container:hover .fa{
+  color: rgb(29, 167, 91);
+  transform: rotateY(360deg);
+  font-size: 30px;
+  transition: .5s ease-in-out;
+ }
+   a:hover .fa{
+    color: rgb(31, 161, 59);
+    transform: rotateY(360deg);
+    transition: .5s ease-in-out;
+    }
 @media (min-width: 769px) and (max-width: 1024px){
   .projectpage{
     columns: 2;

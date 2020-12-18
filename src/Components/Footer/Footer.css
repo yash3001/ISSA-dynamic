@@ -3,7 +3,7 @@
   height: 100%;
   padding: 5px;
   overflow: hidden;
-  transition: all ease-in-out 1.2s;
+  transition: all ease-in-out 1s;
 }
 .items{
   display: flex;
@@ -45,7 +45,6 @@ z-index: 1;
 }
 .wig li a .fa{
 position: relative;
-color: 	#C8C8C8;
 transition: .5s;
 z-index: 3;
   font-size: 20px;
@@ -56,7 +55,7 @@ transform: rotateY(360deg);
 font-size: 23px;
 }
 .wig li:nth-child(1) a:hover .fa{
-  color: #ffffff;
+  color: #05dd58;
 }
 .wig li:nth-child(2) a:hover .fa{
 color: #2ea3f1;
@@ -83,22 +82,26 @@ z-index: 2;
 .suggestionbox{
   padding-top: 8px;
   padding-bottom: 8px;
- border-radius: 1px;
-  border-radius: 6px;
-  color: black;
+  border-radius: 20px;
+  color: white;
   font-weight: 400;
-  font-size: 1.1rem;
   margin-top: 20px;
+  margin-bottom: 20px;
  display: inline-block;
-background: #55b9f3;
-box-shadow: 
+background: #000000;
+width: 200px !important;
+/* box-shadow: 
 inset 0 0 25px rgba(55, 84, 170,0),
 inset 0 0 20px rgba(255, 255, 255,0),
 -2px -2px 8px rgba(255, 255, 255,1),
-inset 5px 5px 4px rgba(255, 255, 255,.2);
+inset 5px 5px 4px rgba(255, 255, 255,.2); */
+}
+.suggestionbox span{
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
 }
 .suggestionbox:hover{
-  background-color: #f1f3f6;
+  background-color: #1369CE;
   text-decoration: none;
   color: black;
   transition: all 0.5s ease-in-out;
@@ -136,8 +139,7 @@ letter-spacing: -2px;
 h1 span{
 margin: 11px 0 17px 0;
 font-size: 30px;
-color: #f1ebe5;
-text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+text-shadow: 0 13.36px 8.896px #c4b59d;
 letter-spacing: -2px;
 }
 .contactus{

@@ -800,4 +800,7 @@ Utility divs
 .u-margin-bottom-big {
   margin-bottom: 8rem;
 }
+li{
+  list-style: none;
+}
 
