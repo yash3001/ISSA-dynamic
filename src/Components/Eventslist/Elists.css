@@ -157,7 +157,7 @@ a:hover{
     }
     .eventpagebackgimg{
         padding: 0px;
-        background-image: url('../../img/events-pics/background-pc-3.jpg');
+        /* background-image: url('../../img/events-pics/background-pc-3.jpg'); */
         background-repeat: repeat;
         background-attachment: local;
         background-size: cover;
