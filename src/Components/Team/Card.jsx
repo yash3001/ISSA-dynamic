@@ -6,7 +6,7 @@ function card(props) {
       <div className="picture">
         <img
           className="img-fluid"
-          src={require(`../../img/lead-pics/${props.name}.jpg`)}
+          src={require(`../../img/lead-pics/${props.name}.jpg`).default}
         />
       </div>
       <div className="team-content">

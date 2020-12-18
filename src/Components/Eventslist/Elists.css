@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-decoration: none;
     
 }
 body{
@@ -15,7 +16,6 @@ a:hover{
 }
 .eventpagebackgimg{
     padding: 110px;
-    background-image: url('../../img/events-pics/background-pc.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -40,6 +40,7 @@ a:hover{
     margin: auto;
     border-radius: 2rem !important;
     transition: all .5s ease-in-out;
+    box-shadow: 0px 0px 15px 0px;
 }
 .elistcard:hover{
     transform: scale(1.1);
@@ -51,7 +52,7 @@ a:hover{
     height: 300px;
     border-radius: 2.5rem !important;
 }
-.elistimg:hover{
+.elistimg{
     transition: all 1s ease-in-out;
     transform: scale(1.1);
     overflow: hidden;

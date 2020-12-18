@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     transition: all 0.25s linear;
   }
-  nav{
+  .navbar{
     align-items: center;
     background: ${({ theme }) => theme.dark} !important;
     color: ${({ theme }) => theme.text} !important;
@@ -35,15 +35,14 @@ export const GlobalStyles = createGlobalStyle`
   footer *{
     color: ${({ theme }) => theme.text} !important;
   }
-  
   div .card{
-    background: ${({ theme }) => theme.body} !important;
+    background: ${({ theme }) => theme.dark} !important;
     color: ${({ theme }) => theme.text} !important;
   }
   div .count{
     background: ${({ theme }) => theme.dark} !important;
   }
-  nav ul li{
+  nav ul .nav-items{
     background: ${({ theme }) => theme.dark} !important;
     color: ${({ theme }) => theme.text} !important;
   }
@@ -57,5 +56,17 @@ export const GlobalStyles = createGlobalStyle`
   }
   div .our-team{
     background: ${({ theme }) => theme.dark} !important;
+  }
+  div{
+    color: ${({ theme }) => theme.text} !important;
+  }
+  .card-container{
+    background: ${({ theme }) => theme.dark} !important;
+  }
+  .header{
+    background-image: ${({ theme }) => theme.gradient},url(/ISSA_Dynamic_Web/static/media/laptop.95fe9b91.webp) !important;
+  }
+  .countdown-timer{
+    background-image: ${({ theme }) => theme.gradient}, url(/ISSA_Dynamic_Web/static/media/5.3f0f7e8c.jpg);
   }
   `;

@@ -220,8 +220,7 @@ Header
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(#0b153dbe, #3539727a),
-    url(img/laptop.webp);
+  background-image: url(img/laptop.webp);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -318,8 +317,8 @@ Section Countdown
 
 .countdown-timer {
   position: relative;
-  background-image: linear-gradient(to right bottom, #28569ac2, #4ba0e1c9),
-    url(img/timer.webp);
+  background-image: linear-gradient(#39598aa9, #79d8eda6),
+    url(img/events-pics/5.jpg);
   background-size: cover;
   background-position: top;
   text-align: center;

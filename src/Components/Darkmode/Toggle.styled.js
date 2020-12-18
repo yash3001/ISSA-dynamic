@@ -20,13 +20,13 @@ const ToggleContainer = styled.button`
     transition: all 0.3s linear;
   }
     // sun icon
-    svg::first-child {
-      transform: ${({ lightTheme }) => lightTheme ? 'translateY(0)' : 'translateY(100px)'};
+    svg:first-child {
+      transform: ${({ theme }) => theme.dark == '#F7F5EC' ? 'translateY(0)' : 'translateY(100px)'};
     }
     
     // moon icon
-    svg::nth-child(2) {
-      transform: ${({ lightTheme }) => lightTheme ? 'translateY(-100px)' : 'translateY(0)'};
+    svg:nth-child(2) {
+      transform: ${({ theme }) => theme.dark == '#F7F5EC' ? 'translateY(-100px)' : 'translateY(0)'};
     }
 `;
 export default ToggleContainer;
