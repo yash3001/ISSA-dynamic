@@ -31,6 +31,7 @@ a:hover{
     margin-bottom: 0px;
 }
 .elistcard{
+    padding: 3.2px;
     height: auto;
     margin-bottom: 50px !important;
     margin-top: 30px !important;
@@ -52,11 +53,14 @@ a:hover{
 .upcoming-events{
     padding: 50px;
     columns: 1;
-    margin-left: 180px;
-    margin-right: 180px;
+    margin-left: 210px;
+    margin-right: 210px;
     column-gap: 60px;
     grid-column-start: auto;
     column-width: 100%;
+}
+.upcoming-events .event-image{
+    height: 300px;
 }
 .our-event{
     padding: 50px;
@@ -110,7 +114,7 @@ a:hover{
     justify-content: center;
     color: white;
     background: linear-gradient(to right, #4b9fe1, #3778c2);
-    padding: 12px 28px;
+    padding: 8px 16px;
     border-radius: 50px;
     text-decoration: none;
 }
@@ -135,7 +139,7 @@ a:hover{
     margin: 0rem 1rem;
     font-size: 1.6rem;
 }
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1079px){
     .fulllist{
         margin-left: 5px;
         margin-right: 5px;
@@ -164,7 +168,7 @@ a:hover{
         margin-right: 5px;
     }
     .ediscription{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         text-align: center;
     }
     .buttonforevent{
@@ -184,6 +188,9 @@ a:hover{
     }
 }
 @media screen and (min-width: 1550px){
+    .event-image{
+        height: 600px;
+    }
     .eventpagebackgimg{
         padding: 130px;
     }

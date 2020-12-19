@@ -660,6 +660,7 @@ Section team
 }
 
 .our-team {
+  
   width: 27rem;
   height: 35rem;
   padding: 3rem 0 4rem;
@@ -672,6 +673,7 @@ Section team
 }
 
 .our-team .picture {
+  
   display: inline-block;
   height: 13rem;
   width: 13rem;
