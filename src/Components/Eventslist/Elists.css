@@ -68,7 +68,6 @@ a:hover{
 }
 .event-image{
     transition: all .5s ease-in-out;
-    width: 500px !important;
     margin-bottom: 10px;
     padding: 10px;
     height: 300px;
@@ -137,6 +136,10 @@ a:hover{
     font-size: 1.6rem;
 }
 @media screen and (max-width: 960px){
+    .fulllist{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     .elistcard{
         margin: 0px;
         padding: 0px;
@@ -144,10 +147,6 @@ a:hover{
     }
     .event-image{
         height: 300px;
-    }
-    .col-12{
-        padding-left: 25px;
-        padding-right: 25px;
     }
     .app {
         display: flex;
@@ -161,8 +160,8 @@ a:hover{
     }
     .upcoming-events{
         padding: 15px;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .ediscription{
         font-size: 1.5rem;
