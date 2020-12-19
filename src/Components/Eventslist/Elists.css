@@ -31,6 +31,7 @@ a:hover{
     margin-bottom: 0px;
 }
 .elistcard{
+    height: 560px;
     margin-bottom: 50px !important;
     margin-top: 30px !important;
     animation: moveInLeft 0.8s ease-out;
@@ -73,8 +74,6 @@ a:hover{
     height: 300px;
     border-radius: 2.5rem !important;
 }
-
-
 #background-video{
     height: 400px;
     width: 100%;
@@ -139,19 +138,13 @@ a:hover{
 }
 @media screen and (max-width: 960px){
     .elistcard{
-        width: fit-content;
-        height: auto;
-        margin: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
+        height: 450px;
     }
     .event-image{
         height: 400px;
-        width: fit-content;
     }
     .our-event{
-        margin: 0px;
-        padding: 0px;
+        padding: 10px;
         columns: 1;
     }
     .upcoming-events{
