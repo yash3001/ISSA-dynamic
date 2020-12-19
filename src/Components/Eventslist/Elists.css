@@ -137,6 +137,14 @@ a:hover{
     font-size: 1.6rem;
 }
 @media screen and (max-width: 960px){
+    .fulllist{
+        padding: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .eventpagebackgimg{
+        padding: 80px;
+    }
     .elistcard{
         height: auto;
     }
