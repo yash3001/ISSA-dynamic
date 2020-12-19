@@ -137,23 +137,27 @@ a:hover{
     font-size: 1.6rem;
 }
 @media screen and (max-width: 960px){
-    .fulllist{
-        padding: 0px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .eventpagebackgimg{
-        padding: 80px;
-    }
     .elistcard{
+        margin: 0px;
+        padding: 0px;
         height: auto;
     }
     .event-image{
-        height: 400px;
+        height: 300px;
     }
+    .col-12{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .app {
+        display: flex;
+        margin: 1.5rem;
+        justify-content: center;
+      }
     .our-event{
         padding: 10px;
         columns: 1;
+        margin: 0px;
     }
     .upcoming-events{
         padding: 15px;
