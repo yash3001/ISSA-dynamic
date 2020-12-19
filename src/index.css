@@ -467,7 +467,7 @@ Section Countdown
   .countdown-timer {
     height: 160rem;
     clip-path: polygon(0 10rem, 100% 0, 100% 150rem, 0 100%);
-    margin-top: -20rem;
+    margin-top: -10rem;
   }
   .countdown-timer h3 {
     top: 15%;

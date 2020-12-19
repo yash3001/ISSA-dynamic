@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import Blogs from '../Components/Blogs/Blogs'
 
 class Blog extends Component{
     render(){
         return(
-            <h1></h1>
+            <Blogs />
         );
     }
 }
