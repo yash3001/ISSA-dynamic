@@ -139,7 +139,7 @@ a:hover{
 }
 @media screen and (max-width: 960px){
     .elistcard{
-        width: 250px;
+        width: 500px;
         height: auto;
         margin: 0px;
         padding-left: 0px;
@@ -147,6 +147,7 @@ a:hover{
     }
     .event-image{
         height: 400px;
+        width: fit-content;
     }
     .our-event{
         margin: 0px;
