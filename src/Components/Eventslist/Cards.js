@@ -3,6 +3,7 @@ import './Elists.css'
 
 function Cards( props ) {
     return(
+        <div>
     <li>
             <div class="card elistcard">
                 <img class="card-img event-image w-100" src={props.image} alt="Card image cap" />
@@ -14,6 +15,8 @@ function Cards( props ) {
                 </div>
             </div>
     </li>
+    <br />
+    </div>
     )
 };
 export default Cards;
