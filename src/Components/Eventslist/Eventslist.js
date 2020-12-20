@@ -9,6 +9,11 @@ import Cards from "./Cards";
 // import Vid from './vid.mp4';
 
 class Eventslist extends Component{
+    state={ clicked: false}
+
+    clickedeventHandler = () => {
+        this.setState({clicked: !this.state.clicked});
+    }
 
     render(){
         return(
@@ -25,7 +30,7 @@ class Eventslist extends Component{
                 {Elistnextevents.map((item, index) => {
                     return(
                         <div className='app'>
-                        <Cards image={item.image} name={item.name} description={item.description} date={item.date} >
+                        <Cards image={item.image} name={item.name} description={item.description} date={item.date} switchs={this.state.clicked}>
                             <a className="buttonforevent">Register&nbsp;Now</a>
                         </Cards>
                         </div>
@@ -37,10 +42,9 @@ class Eventslist extends Component{
                 {Elists.map(( item ) => {
                     return(
                         <div className='app'>
-                    <Cards image={item.image} name={item.name} description={item.description} date={item.date} >
+                    <Cards image={item.image} name={item.name} description={item.description} date={item.date} switchs={this.state.clicked} youtube={item.youtube}>
                         <div className="iconcontainer">
-                            <a href={item.youtube}><i className="fa icons fa-youtube-play" aria-hidden="true"></i></a>
-                            <a href={item.instagram}><i className="fa icons fa-instagram" aria-hidden="true"></i></a>
+                            <a onClick={this.clickedeventHandler}><i className="fa icons fa-youtube-play" aria-hidden="true"></i></a>
                         </div>
                     </Cards>
                     </div>

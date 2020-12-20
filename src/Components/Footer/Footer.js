@@ -3,14 +3,18 @@ import '../Navbar/Navbar.css';
 import './Footer.css';
 import logo from './issa-logo.png'
 import fire from '../../Firebase';
-import firebase from 'firebase'
-const db = firebase.firestore();
-db.settings({timestampInSnapshorts: true});
+import styled from 'styled-components';
+import firebase from 'firebase';
+
 class Footer extends Component{
-    
     state={
-        suggestionbox: ""
+        suggestionbox: "",
+        clicked: false
     }
+    clickedeventHandler = () => {
+        this.setState({clicked: true});
+    }
+
     handletext=e=>{
         
         this.setState({
@@ -50,9 +54,14 @@ class Footer extends Component{
                 </h1>
                 </div>
                 <div className="footer-copyright col-12">
-                   <input placeholder='Tell us somthing u want us to know' className='suggestionbox text-center col-12 col-md-12 col-lg-12 col-xl-12' type='text' onChange={this.handletext} id='inputtext'></input>
+                    <div onClick={this.clickedeventHandler}>
+                   <input placeholder='Suggestion Box' className='suggestionbox text-center col-12 col-md-12 col-lg-12 col-xl-12' type='text' onChange={this.handletext} id='inputtext'></input>
+                   </div>
                     <br />
-                    <button className='btn btn--white btn--animated submit' onClick={this.handlesubmit}>SUBMIT</button>
+                    {this.state.clicked ? <button className='btn btn--white btn--animated submit' onClick={this.handlesubmit}>SUBMIT</button> : <span></span>}
+                </div>
+                <div className='text-center copyright'>
+                    Copyright &copy;ISSA 2020
                 </div>
             </footer>
 

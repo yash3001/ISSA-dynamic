@@ -4,6 +4,7 @@ import About from "../Components/About/About";
 import Timer from "../Components/Timer/Timer";
 import Team from "../Components/Team/Team";
 import Navigation from "../Components/Navigation/Navigation";
+import Toggler from "../Components/Navigation/Toggler";
 
 class Home extends Component{
     state = {
@@ -15,7 +16,7 @@ class Home extends Component{
       render(){
           return(
       <div className='homepage'>
-        <Navigation />
+        
         <main>
           <Header />
           <About />

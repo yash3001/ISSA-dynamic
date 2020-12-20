@@ -487,15 +487,15 @@ Navigation Menu
 }
 
 .navigation__button {
-  background-color: #fff;
+  /* background-color: #fff;
   height: 7rem;
-  width: 7rem;
+  width: 7rem; */
   position: fixed;
-  bottom: 4rem;
-  right: 5rem;
-  border-radius: 50%;
+  bottom: 30px;
+  right: 40px;
+  /* border-radius: 50%; */
   z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); */
   text-align: center;
   cursor: pointer;
 }

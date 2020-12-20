@@ -11,7 +11,7 @@ function header(props) {
             Information System Security Association
           </span>
         </h1>
-        <a href="#" className="btn btn--white btn--animated">
+        <a href="#about" className="btn btn--white btn--animated">
           Explore More
         </a>
       </section>

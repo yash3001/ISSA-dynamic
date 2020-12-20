@@ -8,6 +8,7 @@ import { lightTheme, darkTheme } from './Components/Darkmode/Theme';
 import { GlobalStyles } from './Components/Darkmode/Global';
 import { useDarkMode } from './Components/Darkmode/useDarkmode';
 import Toggle from './Components/Darkmode/Toggle.js';
+import Toggler from "./Components/Navigation/Toggler";
 
 function App() {
 
@@ -19,14 +20,15 @@ function App() {
       <>
     <div>
       <Navbar />
+      <Toggler />
         <Main />
       <Footer />
       <div className='toggle-container'>
-      <Toggle theme={theme} toggleTheme={toggleTheme}></Toggle>
-      <h3 className='text-center'>It's a {theme === 'light' ? 'light mode' : 'dark mode'}!</h3>
+      {/* <Toggle theme={theme} toggleTheme={toggleTheme}></Toggle>
+      <h3 className='text-center'>It's a {theme === 'light' ? 'light mode' : 'dark mode'}!</h3> */}
       </div>
     </div>
-    <GlobalStyles />
+    {/* <GlobalStyles /> */}
     </>
     </ThemeProvider>
   );

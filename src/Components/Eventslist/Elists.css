@@ -96,6 +96,10 @@ a:hover{
     font-size: 1.5rem;
     text-align: center;
 }
+.edate{
+    font-size: 1.4rem !important;
+    font-weight: 700;
+}
 .heading-upcoming{
     font-size: 3rem;
     font-weight: bold;
