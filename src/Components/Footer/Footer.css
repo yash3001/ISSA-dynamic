@@ -90,12 +90,17 @@ z-index: 2;
   margin-bottom: 20px;
  display: inline-block;
 background: #000000;
-width: 200px !important;
+width: 600px !important;
+height: 40px;
+font-size: 15px;
 /* box-shadow: 
 inset 0 0 25px rgba(55, 84, 170,0),
 inset 0 0 20px rgba(255, 255, 255,0),
 -2px -2px 8px rgba(255, 255, 255,1),
 inset 5px 5px 4px rgba(255, 255, 255,.2); */
+}
+#inputtext{
+  color: #fff;
 }
 .suggestionbox span{
   font-size: 1.5rem;
@@ -142,6 +147,13 @@ margin: 11px 0 17px 0;
 font-size: 30px;
 text-shadow: 0 13.36px 8.896px #c4b59d;
 letter-spacing: 2px;
+}
+.submit{
+  font-size: 15px !important;
+  margin-bottom: 15px;
+  border-radius: 15px !important;
+  width: 200px;
+  height: 35px;
 }
 @media screen and (max-width: 578px){
   h1 span{

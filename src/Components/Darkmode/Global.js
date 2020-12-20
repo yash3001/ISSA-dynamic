@@ -79,5 +79,13 @@ export const GlobalStyles = createGlobalStyle`
   }
   .suggestionbox{
     background: ${({ theme }) => theme.text} !important;
+    color: ${({ theme }) => theme.body};
   }  
+  .responsive-iframe{
+    background-image: ${({ theme }) => theme.gradient};
+  }
+  .submit{
+    background: ${({ theme }) => theme.text} !important;
+    color: ${({ theme }) => theme.body} !important;
+  }
   `;

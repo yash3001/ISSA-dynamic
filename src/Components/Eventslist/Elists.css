@@ -139,6 +139,11 @@ a:hover{
     margin: 0rem 1rem;
     font-size: 1.6rem;
 }
+.iconcontainer a:hover .fa:first-child{
+    color: #FF0000;
+    transform: rotateY(360deg);
+    transition: .5s ease-in-out;
+    }
 @media screen and (max-width: 1079px){
     .fulllist{
         margin-left: 5px;

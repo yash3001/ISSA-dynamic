@@ -2,8 +2,33 @@ import React, { Component } from 'react';
 import '../Navbar/Navbar.css';
 import './Footer.css';
 import logo from './issa-logo.png'
-
+import fire from '../../Firebase';
+import firebase from 'firebase'
+const db = firebase.firestore();
+db.settings({timestampInSnapshorts: true});
 class Footer extends Component{
+    
+    state={
+        suggestionbox: ""
+    }
+    handletext=e=>{
+        
+        this.setState({
+            suggestionbox: e.target.value
+        })
+        console.log(this.state.suggestionbox);
+    }
+    handlesubmit=e=>{
+        let messageRef=fire.database().ref('suggestionbox').orderByKey().limitToLast(200);
+        if (this.state.suggestionbox != '')
+        fire.database().ref('suggestionbox').push(this.state.suggestionbox);
+        const input = document.getElementById('inputtext');
+        input.value='';
+        this.setState({
+            suggestionbox: ""
+        })
+        console.log(this.state.suggestionbox);
+    }
     render(){
         return(
             <footer className='foot'>
@@ -25,9 +50,9 @@ class Footer extends Component{
                 </h1>
                 </div>
                 <div className="footer-copyright col-12">
-                   <a className='suggestionbox col-12 col-md-12 col-lg-12 col-xl-12' target="_blank" href="https://forms.gle/hD6CDjorzfwBGRKU7" >
-                   <span className='buttontext col-12'>SUGGESTION BOX</span>
-                       </a>
+                   <input placeholder='Tell us somthing u want us to know' className='suggestionbox text-center col-12 col-md-12 col-lg-12 col-xl-12' type='text' onChange={this.handletext} id='inputtext'></input>
+                    <br />
+                    <button className='btn btn--white btn--animated submit' onClick={this.handlesubmit}>SUBMIT</button>
                 </div>
             </footer>
 

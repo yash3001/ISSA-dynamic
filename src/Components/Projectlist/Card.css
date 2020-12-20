@@ -80,7 +80,7 @@ p1 {
   font-size: 35px;
   transition: .8s ease-in-out;
  }
-   a:hover .fa{
+   .btnn a:hover .fa{
     color: rgb(31, 161, 59);
     transform: rotateY(360deg);
     transition: .5s ease-in-out;
