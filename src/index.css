@@ -375,7 +375,6 @@ Section Countdown
 
 .countdown-timer__box .days h4 {
   color: #fb502f;
-  left: 7rem;
 }
 
 .countdown-timer__box .hours h4 {
@@ -660,7 +659,6 @@ Section team
 }
 
 .our-team {
-  
   width: 27rem;
   height: 35rem;
   padding: 3rem 0 4rem;
@@ -673,7 +671,6 @@ Section team
 }
 
 .our-team .picture {
-  
   display: inline-block;
   height: 13rem;
   width: 13rem;
@@ -802,8 +799,6 @@ Utility divs
 .u-margin-bottom-big {
   margin-bottom: 8rem;
 }
-li{
+li {
   list-style: none;
 }
-
-
