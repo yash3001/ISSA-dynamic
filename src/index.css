@@ -317,8 +317,7 @@ Section Countdown
 
 .countdown-timer {
   position: relative;
-  background-image: linear-gradient(#39598aa9, #79d8eda6),
-    url(img/events-pics/5.jpg);
+  background-image: linear-gradient(#39598aa9, #79d8eda6),url(img/events-pics/6.jpg);
   background-size: cover;
   background-position: top;
   text-align: center;
